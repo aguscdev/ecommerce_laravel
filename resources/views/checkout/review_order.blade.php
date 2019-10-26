@@ -135,7 +135,7 @@
                             <label><input type="radio" name="payment_method" value="COD" checked> Cash On Delivery</label>
                         </span>
                             <span>
-                            <label><input type="radio" name="payment_method" value="Paypal"> Paypal</label>
+                            <label><input type="radio" name="payment_method" value="Paypal"> Via Transfer</label>
                         </span>
                             <button type="submit" class="btn btn-primary" style="float: right;">Pesan sekarang</button>
                         </div>
