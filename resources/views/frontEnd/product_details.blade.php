@@ -71,7 +71,7 @@
                                 <span id="availableStock">Tidak Ada Stock</span>
                             @endif
                         </p>
-                        <p><b>Condition:</b> Baru</p>
+                        <p><b>Kondisi:</b> Baru</p>
                             <b>Share:</b>
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
