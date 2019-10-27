@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2019 at 10:24 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Waktu pembuatan: 27 Okt 2019 pada 15.51
+-- Versi server: 10.4.6-MariaDB
+-- Versi PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cart`
+-- Struktur dari tabel `cart`
 --
 
 CREATE TABLE `cart` (
@@ -44,17 +44,16 @@ CREATE TABLE `cart` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `cart`
+-- Dumping data untuk tabel `cart`
 --
 
 INSERT INTO `cart` (`id`, `products_id`, `product_name`, `product_code`, `product_color`, `size`, `price`, `quantity`, `user_email`, `session_id`, `created_at`, `updated_at`) VALUES
-(50, 28, 'Lexus Rx 330', 'SKU-Lexus2', 'White', 'Size Black', 11.00, 22, 'agusc.dev02@gmail.com', 'e153gnzWfu6K58144tdvP7aDeWOOz708y0pLAyVE', '2019-10-26 00:03:47', '2019-10-26 00:03:47'),
-(51, 35, 'Cloths', 'SKU-White', 'Black', 'L', 6.00, 1, 'agusc.dev02@gmail.com', 'zS74JBxz430822nsp9LtAiFKBMKsvP6lVDrOL7SN', '2019-10-26 00:41:33', '2019-10-26 00:41:33');
+(54, 37, 'Allstar High', 'JNS-High', 'Biru', '40', 170.00, 1, 'agusc.dev02@gmail.com', '7pLJPVytAvELo9inEjLuISEmCGIZCH00lYs7VL3E', '2019-10-27 07:45:11', '2019-10-27 07:45:11');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Struktur dari tabel `categories`
 --
 
 CREATE TABLE `categories` (
@@ -70,25 +69,17 @@ CREATE TABLE `categories` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `categories`
+-- Dumping data untuk tabel `categories`
 --
 
 INSERT INTO `categories` (`id`, `parent_id`, `name`, `description`, `url`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
-(12, 0, 'Mobil', 'Kategory Mobil', 'http://wornnarith.cambosoft.com', 1, NULL, '2018-10-22 21:32:33', '2019-10-24 00:00:18'),
-(10, 0, 'House', 'House Category', 'http://wornnarith.cambosoft.com', 1, NULL, '2018-10-22 21:31:29', '2018-11-16 02:05:53'),
-(11, 0, 'Shoes', 'Shoes Category', 'http://wornnarith.cambosoft.com', 1, NULL, '2018-10-22 21:32:14', '2018-11-16 02:07:15'),
-(13, 0, 'Computer', 'Computer Category', 'http://wornnarith.cambosoft.com', 1, NULL, '2018-10-22 21:33:26', '2018-11-16 02:05:43'),
-(14, 0, 'Cloths', 'Cloths Category', 'http://wornnarith.cambosoft.com', 1, NULL, '2018-10-22 21:34:31', '2018-11-16 02:05:18'),
-(15, 12, 'Toyota', 'Toyota Sub Category of Car', 'http://wornnarith.cambosoft.com', 1, NULL, '2018-10-22 21:35:08', '2018-11-16 01:54:49'),
-(16, 10, 'Link House', 'Link House Sub Category', 'http://wornnarith.cambosoft.com', 1, NULL, '2018-10-22 21:56:56', '2018-11-16 02:07:05'),
-(17, 11, 'Man Shoes', 'Man Shoes Sub Category of Shoes', 'http://wornnarith.cambosoft.com', 1, NULL, '2018-10-22 21:58:13', '2018-11-16 01:53:44'),
-(25, 0, 'Adidas', 'Sepatu Running', 'https://www.instagram.com/agc_store/?hl=id', 1, NULL, '2019-10-24 00:14:46', '2019-10-24 00:14:46'),
-(26, 25, 'Sepatu Baru', 'siap', 'https://www.instagram.com/agc_store/?hl=id', 1, NULL, '2019-10-24 00:17:29', '2019-10-24 00:17:29');
+(27, 0, 'Allstar', 'ALLSTAR CT 2', 'https://m.facebook.com/AGC_store-1019081021588928/?ref=bookmarks', 1, NULL, '2019-10-27 06:41:25', '2019-10-27 06:41:25'),
+(28, 0, 'Adidas', 'Adidas Zoom', 'https://m.facebook.com/AGC_store-1019081021588928/?ref=bookmarks', 1, NULL, '2019-10-27 07:17:51', '2019-10-27 07:17:51');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `countries`
+-- Struktur dari tabel `countries`
 --
 
 CREATE TABLE `countries` (
@@ -100,7 +91,7 @@ CREATE TABLE `countries` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `countries`
+-- Dumping data untuk tabel `countries`
 --
 
 INSERT INTO `countries` (`id`, `country_code`, `country_name`, `created_at`, `updated_at`) VALUES
@@ -404,7 +395,7 @@ INSERT INTO `countries` (`id`, `country_code`, `country_name`, `created_at`, `up
 -- --------------------------------------------------------
 
 --
--- Table structure for table `coupons`
+-- Struktur dari tabel `coupons`
 --
 
 CREATE TABLE `coupons` (
@@ -419,7 +410,7 @@ CREATE TABLE `coupons` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `coupons`
+-- Dumping data untuk tabel `coupons`
 --
 
 INSERT INTO `coupons` (`id`, `coupon_code`, `amount`, `amount_type`, `expiry_date`, `status`, `created_at`, `updated_at`) VALUES
@@ -428,7 +419,7 @@ INSERT INTO `coupons` (`id`, `coupon_code`, `amount`, `amount_type`, `expiry_dat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `delivery_address`
+-- Struktur dari tabel `delivery_address`
 --
 
 CREATE TABLE `delivery_address` (
@@ -447,16 +438,16 @@ CREATE TABLE `delivery_address` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `delivery_address`
+-- Dumping data untuk tabel `delivery_address`
 --
 
 INSERT INTO `delivery_address` (`id`, `users_id`, `users_email`, `name`, `address`, `city`, `state`, `country`, `pincode`, `mobile`, `created_at`, `updated_at`) VALUES
-(5, 4, 'pujiyati@gmail.com', 'Pujiyati', 'vdfbnh', 'sfdgn', 'dfghjjk', 'Indonesia', '234', '3453647', NULL, NULL);
+(6, 5, 'azis@gmail.com', 'Azis Ridwan', 'Cikupa', 'Tangerang', 'Banten', 'Indonesia', '101550', '085778783602', NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Struktur dari tabel `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -466,7 +457,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `migrations`
+-- Dumping data untuk tabel `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -486,7 +477,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
+-- Struktur dari tabel `orders`
 --
 
 CREATE TABLE `orders` (
@@ -511,18 +502,17 @@ CREATE TABLE `orders` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `orders`
+-- Dumping data untuk tabel `orders`
 --
 
 INSERT INTO `orders` (`id`, `users_id`, `users_email`, `name`, `address`, `city`, `state`, `pincode`, `country`, `mobile`, `shipping_charges`, `coupon_code`, `coupon_amount`, `order_status`, `payment_method`, `grand_total`, `created_at`, `updated_at`) VALUES
-(12, 1, 'agusc.dev02@gmail.com', 'weshare', 'vdfbnh', 'sfdgn', 'dfghjjk', '234', 'Indonesia', '3453647', 0.00, 'NO Coupon', '0', 'success', 'COD', '20', '2019-10-25 05:14:29', '2019-10-25 05:14:29'),
-(13, 4, 'pujiyati@gmail.com', 'Pujiyati', 'vdfbnh', 'sfdgn', 'dfghjjk', '234', 'Indonesia', '3453647', 0.00, 'NO Coupon', '0', 'success', 'COD', '6', '2019-10-26 01:00:49', '2019-10-26 01:00:49'),
-(14, 4, 'pujiyati@gmail.com', 'Pujiyati', 'vdfbnh', 'sfdgn', 'dfghjjk', '234', 'Indonesia', '3453647', 0.00, 'NO Coupon', '0', 'success', 'Paypal', '6', '2019-10-26 01:06:25', '2019-10-26 01:06:25');
+(16, 5, 'azis@gmail.com', 'Azis Ridwan', 'Cikupa', 'Tangerang', 'Banten', '101550', 'Indonesia', '085778783602', 0.00, 'NO Coupon', '0', 'success', 'Paypal', '170', '2019-10-27 07:50:39', '2019-10-27 07:50:39'),
+(15, 5, 'azis@gmail.com', 'Azis Ridwan', 'Cikupa', 'Tangerang', 'Banten', '101550', 'Indonesia', '085778783602', 0.00, 'NO Coupon', '0', 'success', 'COD', '170', '2019-10-27 07:50:26', '2019-10-27 07:50:26');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_resets`
+-- Struktur dari tabel `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -534,7 +524,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Struktur dari tabel `products`
 --
 
 CREATE TABLE `products` (
@@ -551,23 +541,19 @@ CREATE TABLE `products` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `products`
+-- Dumping data untuk tabel `products`
 --
 
 INSERT INTO `products` (`id`, `categories_id`, `p_name`, `p_code`, `p_color`, `description`, `price`, `image`, `created_at`, `updated_at`) VALUES
-(28, 15, 'Lexus Rx 330', '12152', 'White', 'EXCELLENT SAFETY FOR YOUR FAMILY<br>Child Safety Locks, Electronic Stability Control, Brake Assist, 4-Wheel ABS, Tire Pressure Monitoring System, 4-Wheel Disc Brakes Safety equipment includes Child Safety Locks', 15.00, '1544063712-lexus-rx-330.jpg', '2018-12-05 19:35:12', '2018-12-05 19:43:48'),
-(29, 12, '2018 Toyota Prius', '1252', 'Red', 'VEHICLE FEATURES<br>Rear Spoiler, MP3 Player, Remote Trunk Release, Keyless Entry, Privacy Glass.&nbsp;', 5.00, '1544063924-2018-toyota-prius.jpg', '2018-12-05 19:38:44', '2018-12-05 19:43:38'),
-(30, 16, 'Link House New LC2', 'L_1252', 'Gray', 'Borey Peng Huoth Cambodia', 10.00, '1544064142-link-house-new-lc2.jpg', '2018-12-05 19:42:22', '2018-12-05 19:42:22'),
-(31, 10, 'House', '5214', 'White and Brown', 'House For Sale', 10.00, '1544064430-house.jpg', '2018-12-05 19:47:10', '2018-12-05 19:47:10'),
-(32, 11, 'Vionic Shoes Brand', '5265', 'All Colors', 'Women Shoes', 12.00, '1544064607-vionic-shoes-brand.jpg', '2018-12-05 19:50:07', '2018-12-05 19:50:07'),
-(33, 17, 'Cole Haan', 'KHR 775659.29', 'Brown', 'Men\'s Original Grand Wingtip Oxfords', 5.00, '1544064903-cole-haan.jpg', '2018-12-05 19:55:03', '2018-12-05 19:55:03'),
-(34, 13, 'Lenovo ThinkPad', '1252', 'Black', 'Lenovo Thinkpad From China', 2.00, '1544065331-lenovo-thinkpad.jpg', '2018-12-05 20:02:12', '2018-12-05 20:02:12'),
-(35, 14, 'Cloths', 'The Man', 'Black', 'Cloths Description here', 2.00, '1571821245-cloths.jpg', '2018-12-05 20:04:54', '2019-10-23 02:00:46');
+(37, 27, 'Allstar High', 'ana02', 'Biru', 'AllStar High&nbsp; <br>Warna : Black TRIBALL White\r\n<br>Outsol : White/Putih Rubber\r\n<br>Insol : Black White\r\n<br>Kualitas : PREMIUM 1:1 LIKE ORI\r\n<br><br>Product : Made In Vietnam\r\n<br>Available Size :\r\n<br>Size : 4,5 - 37 - 23.5cm\r\n<br>Size : 5 - 38 - 24cm\r\n<br>Size : 6 - 39 - 24,5cm\r\n<br>Size : 7 - 40 - 25,5cm\r\n<br>Size : 7,5 - 41 - 26cm\r\n<br>Size : 8,5 - 42 - 27cm\r\n<br>Size : 9,5 - 43 - 28cm\r\n<br>Size : 10 - 44 - 29cm\r\n<div><br></div>', 170000.00, '1572185549-allstar-high.jpg', '2019-10-27 07:12:30', '2019-10-27 07:12:30'),
+(36, 27, 'Allstar CT2', 'ana01', 'Merah', '<span>Allstar CT 2 Tribal<br>Warna : Merah TRIBALL<br>White\r\nOutsol : White/Putih <br>Rubber\r\nInsol : Black White\r\n<br><br>Kualitas : PREMIUM 1:1 LIKE ORI\r\n<br>Product : Made In Vietnam\r\n<br>Available Size :\r\n<br>Size : 4,5 - 37 - 23.5cm\r\n<br>Size : 5 - 38 - 24cm\r\n<br>Size : 6 - 39 - 24,5cm\r\n<br>Size : 7 - 40 - 25,5cm\r\n<br>Size : 7,5 - 41 - 26cm\r\n<br>Size : 8,5 - 42 - 27cm\r\n<br>Size : 9,5 - 43 - 28cm\r\n<br>Size : 10 - 44 - 29cm</span>', 150000.00, '1572184244-allstar-ct2.jpg', '2019-10-27 06:50:44', '2019-10-27 06:50:44'),
+(38, 28, 'Adidas Zoom', 'Ana03', 'Hitam', '<span>Kwalitas : Grade Ori, <br>Varian : sesuai susunan grid CEK PICTURE \r\n\r\nUpper Menggunakan Bahan Pabrikan,\r\nSol Menggunakan Bahan Phylon,\r\n\r\nKuat namun tetap Ringan dan Nyaman\r\nMembuat penampilan anda yg Sporty dan elegan menjadi makin fashionable.\r\ncocok untuk dipakai Olahraga Indoor &amp; Outdoor.\r\n\r\nDengan pilihan warna unggulan dan menjadi pilihan utama pengguna Adidas.<br></span>36 : 23cm\r\n37 : 23.5cm\r\n38 : 24cm\r\n39 : 24.5cm	\r\n40 : 25cm\r\n41 : 25.5cm\r\n42 : 26cm\r\n43 : 26.5cm\r\n44 : 27cm<br>', 220000.00, '1572186195-adidas-zoom.jpg', '2019-10-27 07:23:15', '2019-10-27 07:23:15'),
+(39, 27, 'Allstar clasik', 'Ana04', 'Biru', '<span>KUALITAS PREMIUM - MADE IN CHINA\r\nKELENGKAPAN = SEPASANG TALI SEPATU BAWAAN - DAPAT DUS SEPATU CONVERSE\r\n\r\n( SELALU MENANYAKAN KETERSEDIAAN BARANG SEBELUM BERBELANJA)\r\n\r\nMENGAPA ANDA HARUS BERBELANJA DI TOKO KAMI?\r\n1. KAMI MELAYANI TUKAR SIZE (SYARAT &amp; KETENTUAN BERLAKU)\r\n2. APABILA BARANG TIDAK SESUAI DESKRIPSI PRODUK / CACAT KAMI MENERIMA PENGEMBALIAN BARANG\r\n\r\nMEMBELI = MENYETUJUI SEMUA SYARAT DAN KONDISI BARANG DIATAS!<br></span>34 = 205 mm\r\n35 = 215 mm\r\n37 = 235 mm\r\n38 = 245 mm\r\n41 = 275 mm\r\n42 = 285 mm\r\n43 = 295 mm\r\n44 = 305 mm<br>', 150000.00, '1572186709-allstar-clasik.jpg', '2019-10-27 07:31:50', '2019-10-27 07:31:50');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_att`
+-- Struktur dari tabel `product_att`
 --
 
 CREATE TABLE `product_att` (
@@ -582,39 +568,38 @@ CREATE TABLE `product_att` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `product_att`
+-- Dumping data untuk tabel `product_att`
 --
 
 INSERT INTO `product_att` (`id`, `products_id`, `sku`, `size`, `price`, `stock`, `created_at`, `updated_at`) VALUES
-(14, 34, 'SKU-Lenovo X1', '15 inch', 10.00, 2, '2018-12-05 20:08:43', '2018-12-05 20:08:43'),
-(13, 35, 'SKU-Red', 'S', 2.00, 5, '2018-12-05 20:08:08', '2018-12-05 20:08:08'),
-(12, 35, 'SKU-White', 'L', 6.00, 2, '2018-12-05 20:07:42', '2018-12-05 20:07:42'),
-(11, 35, 'SKU-Black', 'M', 5.00, 10, '2018-12-05 20:07:11', '2018-12-05 20:07:11'),
-(15, 34, 'SKU-Carbon', '14 inch', 4.00, 5, '2018-12-05 20:09:05', '2018-12-05 20:09:05'),
-(16, 33, 'SKU-Haan1', '25', 12.00, 3, '2018-12-05 20:09:45', '2018-12-05 20:09:45'),
-(17, 33, 'SKU-Haan2', '22', 10.00, 1, '2018-12-05 20:09:58', '2018-12-05 20:09:58'),
-(18, 33, 'SKU-Haan3', '19', 2.00, 3, '2018-12-05 20:10:16', '2018-12-05 20:10:16'),
-(19, 32, 'SKU-Vionic1', '20', 10.00, 5, '2018-12-05 20:11:02', '2018-12-05 20:11:02'),
-(20, 32, 'SKU-Vionic2', '20', 15.00, 4, '2018-12-05 20:11:24', '2018-12-05 20:11:24'),
-(21, 32, 'SKU-Vionic3', '30', 20.00, 1, '2018-12-05 20:11:38', '2018-12-05 20:11:38'),
-(22, 31, 'SKU-House1', '5*20', 25.00, 4, '2018-12-05 20:12:13', '2018-12-05 20:12:13'),
-(23, 31, 'SKU-House2', '10*10', 20.00, 2, '2018-12-05 20:12:30', '2018-12-05 20:12:30'),
-(24, 31, 'SKU-House3', '20*20', 20.00, 5, '2018-12-05 20:12:46', '2018-12-05 20:12:46'),
-(25, 30, 'SKU-Link House1', 'Small', 10.00, 5, '2018-12-05 20:13:06', '2018-12-05 20:13:06'),
-(26, 30, 'SKU-House2', 'Medium', 15.00, 23, '2018-12-05 20:13:23', '2018-12-05 20:13:23'),
-(27, 30, 'SKU-House3', 'Large', 5.00, 2, '2018-12-05 20:14:55', '2018-12-05 20:14:55'),
-(28, 29, 'SKU-Prius1', 'One Size', 12.00, 2, '2018-12-05 20:15:43', '2018-12-05 20:15:43'),
-(29, 28, 'SKU-Lexus Red', 'Size Red', 12.00, 12, '2018-12-05 20:16:28', '2019-10-24 00:58:36'),
-(30, 28, 'SKU-Lexus2', 'Size Black', 11.00, 22, '2018-12-05 20:16:48', '2019-10-24 00:58:36'),
-(31, 28, 'SKU-Lexus3', 'Size White', 12.00, 2, '2018-12-05 20:17:02', '2019-10-24 00:58:36'),
-(32, 27, 'SKU-Hilander', 'Size Black', 50.00, 10, '2018-12-05 20:17:35', '2018-12-05 20:17:35'),
-(33, 27, 'SKU-Hilander1', 'Size White', 20.00, 10, '2018-12-05 20:17:46', '2018-12-05 20:17:46'),
-(34, 27, 'SKU-Hilande3', 'Size Red', 20.00, 10, '2018-12-05 20:18:01', '2018-12-05 20:18:01');
+(35, 36, 'JNS-CT2', '38', 150.00, 5, '2019-10-27 07:01:37', '2019-10-27 07:43:04'),
+(36, 36, 'JNS-CT2', '39', 150.00, 5, '2019-10-27 07:02:02', '2019-10-27 07:43:04'),
+(37, 36, 'JNS-CT2', '40', 150.00, 5, '2019-10-27 07:02:16', '2019-10-27 07:43:04'),
+(38, 36, 'JNS-CT2', '41', 150.00, 5, '2019-10-27 07:02:40', '2019-10-27 07:43:04'),
+(39, 36, 'JNS-CT2', '42', 150.00, 5, '2019-10-27 07:02:51', '2019-10-27 07:43:04'),
+(40, 36, 'JNS-CT2', '43', 150.00, 43, '2019-10-27 07:03:08', '2019-10-27 07:43:04'),
+(41, 37, 'JNS-High', '38', 170.00, 5, '2019-10-27 07:13:49', '2019-10-27 07:42:38'),
+(42, 37, 'JNS-High', '39', 170.00, 5, '2019-10-27 07:14:18', '2019-10-27 07:42:38'),
+(43, 37, 'JNS-High', '40', 170.00, 5, '2019-10-27 07:14:47', '2019-10-27 07:42:38'),
+(44, 37, 'JNS-High', '41', 170.00, 5, '2019-10-27 07:15:08', '2019-10-27 07:42:38'),
+(45, 37, 'JNS-High', '42', 170.00, 5, '2019-10-27 07:15:25', '2019-10-27 07:42:38'),
+(46, 37, 'JNS-High', '43', 170.00, 5, '2019-10-27 07:15:43', '2019-10-27 07:42:38'),
+(47, 38, 'JNS-Zoom', '38', 220.00, 5, '2019-10-27 07:24:17', '2019-10-27 07:41:07'),
+(48, 38, 'JNS-Zoom', '39', 220.00, 5, '2019-10-27 07:24:29', '2019-10-27 07:41:07'),
+(49, 38, 'JNS-Zoom', '40', 220.00, 5, '2019-10-27 07:24:42', '2019-10-27 07:41:07'),
+(50, 38, 'JNS-Zoom', '41', 220.00, 5, '2019-10-27 07:24:55', '2019-10-27 07:41:07'),
+(51, 38, 'JNS-Zoom', '42', 220.00, 5, '2019-10-27 07:25:09', '2019-10-27 07:41:07'),
+(52, 38, 'JNS-Zoom', '43', 220.00, 5, '2019-10-27 07:25:23', '2019-10-27 07:41:07'),
+(53, 39, 'JNS-Clasik', '39', 150.00, 10, '2019-10-27 07:32:48', '2019-10-27 07:39:29'),
+(54, 39, 'JNS-Clasik', '40', 150.00, 10, '2019-10-27 07:33:00', '2019-10-27 07:39:29'),
+(55, 39, 'JNS-Clasik', '41', 150.00, 10, '2019-10-27 07:33:16', '2019-10-27 07:39:29'),
+(56, 39, 'JNS-Clasik', '42', 150.00, 10, '2019-10-27 07:33:33', '2019-10-27 07:39:29'),
+(57, 39, 'JNS-Clasik', '43', 150.00, 10, '2019-10-27 07:33:54', '2019-10-27 07:39:29');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblgallery`
+-- Struktur dari tabel `tblgallery`
 --
 
 CREATE TABLE `tblgallery` (
@@ -626,42 +611,26 @@ CREATE TABLE `tblgallery` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `tblgallery`
+-- Dumping data untuk tabel `tblgallery`
 --
 
 INSERT INTO `tblgallery` (`id`, `products_id`, `image`, `created_at`, `updated_at`) VALUES
-(8, 27, '7664271544063472.jpg', '2018-12-05 19:31:12', '2018-12-05 19:31:12'),
-(9, 27, '6768551544063472.jpg', '2018-12-05 19:31:13', '2018-12-05 19:31:13'),
-(10, 27, '4131281544063473.jpg', '2018-12-05 19:31:13', '2018-12-05 19:31:13'),
-(11, 28, '6720891544063734.jpg', '2018-12-05 19:35:34', '2018-12-05 19:35:34'),
-(12, 28, '4686631544063734.jpg', '2018-12-05 19:35:34', '2018-12-05 19:35:34'),
-(13, 28, '5960611544063759.jpeg', '2018-12-05 19:35:59', '2018-12-05 19:35:59'),
-(14, 29, '5146071544063935.JPG', '2018-12-05 19:38:55', '2018-12-05 19:38:55'),
-(15, 29, '762811544063935.jpg', '2018-12-05 19:38:55', '2018-12-05 19:38:55'),
-(16, 29, '3716041544063935.jpg', '2018-12-05 19:38:56', '2018-12-05 19:38:56'),
-(17, 30, '6832831544064156.jpg', '2018-12-05 19:42:37', '2018-12-05 19:42:37'),
-(18, 30, '1655391544064157.jpg', '2018-12-05 19:42:37', '2018-12-05 19:42:37'),
-(19, 30, '4693601544064157.jpg', '2018-12-05 19:42:37', '2018-12-05 19:42:37'),
-(20, 31, '9233341544064441.jpg', '2018-12-05 19:47:21', '2018-12-05 19:47:21'),
-(21, 31, '8167501544064441.jpg', '2018-12-05 19:47:22', '2018-12-05 19:47:22'),
-(22, 31, '3887071544064442.jpg', '2018-12-05 19:47:22', '2018-12-05 19:47:22'),
-(23, 32, '3998691544064618.jpg', '2018-12-05 19:50:18', '2018-12-05 19:50:18'),
-(24, 32, '1159141544064618.jpg', '2018-12-05 19:50:18', '2018-12-05 19:50:18'),
-(25, 32, '2035101544064618.jpg', '2018-12-05 19:50:18', '2018-12-05 19:50:18'),
-(26, 33, '2128501544064917.jpg', '2018-12-05 19:55:17', '2018-12-05 19:55:17'),
-(27, 33, '5649911544064917.jpg', '2018-12-05 19:55:17', '2018-12-05 19:55:17'),
-(28, 33, '3704141544064917.jpg', '2018-12-05 19:55:17', '2018-12-05 19:55:17'),
-(29, 34, '3899431544065346.JPG', '2018-12-05 20:02:26', '2018-12-05 20:02:26'),
-(30, 34, '119131544065346.jpg', '2018-12-05 20:02:27', '2018-12-05 20:02:27'),
-(31, 34, '6905491544065347.jpg', '2018-12-05 20:02:27', '2018-12-05 20:02:27'),
-(37, 35, '7584451571821081.jpg', '2019-10-23 01:58:02', '2019-10-23 01:58:02'),
-(36, 35, '909501571821062.jpg', '2019-10-23 01:57:43', '2019-10-23 01:57:43'),
-(35, 35, '8135051571821022.jpg', '2019-10-23 01:57:04', '2019-10-23 01:57:04');
+(49, 39, '8399091572186728.jpg', '2019-10-27 07:32:09', '2019-10-27 07:32:09'),
+(48, 39, '187951572186728.jpg', '2019-10-27 07:32:08', '2019-10-27 07:32:08'),
+(47, 38, '3576811572186218.jpg', '2019-10-27 07:23:38', '2019-10-27 07:23:38'),
+(46, 38, '9116311572186217.jpg', '2019-10-27 07:23:38', '2019-10-27 07:23:38'),
+(44, 37, '4782941572185589.jpg', '2019-10-27 07:13:10', '2019-10-27 07:13:10'),
+(43, 37, '93181572185589.jpg', '2019-10-27 07:13:09', '2019-10-27 07:13:09'),
+(45, 38, '8493131572186217.jpg', '2019-10-27 07:23:37', '2019-10-27 07:23:37'),
+(41, 37, '2333121572185588.jpg', '2019-10-27 07:13:08', '2019-10-27 07:13:08'),
+(40, 36, '4044231572184273.jpg', '2019-10-27 06:51:13', '2019-10-27 06:51:13'),
+(39, 36, '3110481572184273.jpg', '2019-10-27 06:51:13', '2019-10-27 06:51:13'),
+(38, 36, '8838661572184272.jpg', '2019-10-27 06:51:13', '2019-10-27 06:51:13');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -683,160 +652,161 @@ CREATE TABLE `users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `admin`, `remember_token`, `created_at`, `updated_at`, `address`, `city`, `state`, `country`, `pincode`, `mobile`) VALUES
-(1, 'Agus Cahyadi', 'agusc.dev02@gmail.com', NULL, '$2y$10$m9fNpTgwyBVqqVfsJ9bXUensvx5iqlYhzqmL3khhSpKpgqNQnW0t2', 1, '5OYitqz09sqVA3ZLSpGm0WoM06ngfc1boLuBKnh8ospdluLCSxxhNkMOjUno', '2018-10-15 02:32:54', '2018-12-05 01:39:52', 'Tangerang', 'Tangerang', 'Banten', 'Indonesia', '15540', '085778783602'),
-(4, 'Pujiyati', 'pujiyati@gmail.com', NULL, '$2y$10$3Ccxg17LYw/.qS7ib5Xcr.T5po6AXUsnjEcEI4IHcQ0MGkcuRfO.O', NULL, 'cN0KgDchtA4Hfz6joOt1qfQMQ423ZeVOf3V15usxOGgcySVVVd6ApPWILLSG', '2018-12-06 01:40:27', '2018-12-06 01:40:27', 'vdfbnh', 'sfdgn', 'dfghjjk', 'Indonesia', '234', '3453647');
+(1, 'Agus Cahyadi', 'agusc.dev02@gmail.com', NULL, '$2y$10$m9fNpTgwyBVqqVfsJ9bXUensvx5iqlYhzqmL3khhSpKpgqNQnW0t2', 1, 'XeG5jlGxg7iQOJwDxT3zIzGiLFvG5NfJzasC0Hqzh9ZPncc5wvnIcX0BM6pT', '2018-10-15 02:32:54', '2018-12-05 01:39:52', 'Tangerang', 'Tangerang', 'Banten', 'Indonesia', '15540', '085778783602'),
+(4, 'Pujiyati', 'pujiyati@gmail.com', NULL, '$2y$10$3Ccxg17LYw/.qS7ib5Xcr.T5po6AXUsnjEcEI4IHcQ0MGkcuRfO.O', NULL, 'cN0KgDchtA4Hfz6joOt1qfQMQ423ZeVOf3V15usxOGgcySVVVd6ApPWILLSG', '2018-12-06 01:40:27', '2018-12-06 01:40:27', 'vdfbnh', 'sfdgn', 'dfghjjk', 'Indonesia', '234', '3453647'),
+(5, 'Azis Ridwan', 'azis@gmail.com', NULL, '$2y$10$DSnFesPl9bzfE0HhCWNa.uJqEG.5zJLkvLqv/7qmg5JU0H3KUCum.', NULL, NULL, '2019-10-27 07:45:55', '2019-10-27 07:45:55', 'Cikupa', 'Tangerang', 'Banten', 'Indonesia', '101550', '085778783602');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `cart`
+-- Indeks untuk tabel `cart`
 --
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `categories`
+-- Indeks untuk tabel `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `slug` (`name`);
 
 --
--- Indexes for table `countries`
+-- Indeks untuk tabel `countries`
 --
 ALTER TABLE `countries`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `coupons`
+-- Indeks untuk tabel `coupons`
 --
 ALTER TABLE `coupons`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `delivery_address`
+-- Indeks untuk tabel `delivery_address`
 --
 ALTER TABLE `delivery_address`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `migrations`
+-- Indeks untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `orders`
+-- Indeks untuk tabel `orders`
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `password_resets`
+-- Indeks untuk tabel `password_resets`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
--- Indexes for table `products`
+-- Indeks untuk tabel `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `product_att`
+-- Indeks untuk tabel `product_att`
 --
 ALTER TABLE `product_att`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tblgallery`
+-- Indeks untuk tabel `tblgallery`
 --
 ALTER TABLE `tblgallery`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `cart`
+-- AUTO_INCREMENT untuk tabel `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT untuk tabel `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT for table `countries`
+-- AUTO_INCREMENT untuk tabel `countries`
 --
 ALTER TABLE `countries`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=298;
 
 --
--- AUTO_INCREMENT for table `coupons`
+-- AUTO_INCREMENT untuk tabel `coupons`
 --
 ALTER TABLE `coupons`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `delivery_address`
+-- AUTO_INCREMENT untuk tabel `delivery_address`
 --
 ALTER TABLE `delivery_address`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `migrations`
+-- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `orders`
+-- AUTO_INCREMENT untuk tabel `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `products`
+-- AUTO_INCREMENT untuk tabel `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
--- AUTO_INCREMENT for table `product_att`
+-- AUTO_INCREMENT untuk tabel `product_att`
 --
 ALTER TABLE `product_att`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
--- AUTO_INCREMENT for table `tblgallery`
+-- AUTO_INCREMENT untuk tabel `tblgallery`
 --
 ALTER TABLE `tblgallery`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

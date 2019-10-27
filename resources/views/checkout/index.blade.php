@@ -16,19 +16,19 @@
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         <legend>Penagihan Ke</legend>
                         <div class="form-group {{$errors->has('billing_name')?'has-error':''}}">
-                            <input type="text" class="form-control" name="billing_name" id="billing_name" value="{{$user_login->name}}" placeholder="Billing Name">
+                            <input type="text" class="form-control" name="billing_name" id="billing_name" value="{{$user_login->name}}" placeholder="Nama">
                             <span class="text-danger">{{$errors->first('billing_name')}}</span>
                         </div>
                         <div class="form-group {{$errors->has('billing_address')?'has-error':''}}">
-                            <input type="text" class="form-control" value="{{$user_login->address}}" name="billing_address" id="billing_address" placeholder="Billing Address">
+                            <input type="text" class="form-control" value="{{$user_login->address}}" name="billing_address" id="billing_address" placeholder="Alamat">
                             <span class="text-danger">{{$errors->first('billing_address')}}</span>
                         </div>
                         <div class="form-group {{$errors->has('billing_city')?'has-error':''}}">
-                            <input type="text" class="form-control" name="billing_city" value="{{$user_login->city}}" id="billing_city" placeholder="Billing City">
+                            <input type="text" class="form-control" name="billing_city" value="{{$user_login->city}}" id="billing_city" placeholder="Kota">
                             <span class="text-danger">{{$errors->first('billing_city')}}</span>
                         </div>
                         <div class="form-group {{$errors->has('billing_state')?'has-error':''}}">
-                            <input type="text" class="form-control" name="billing_state" value="{{$user_login->state}}" id="billing_state" placeholder=" Billing State">
+                            <input type="text" class="form-control" name="billing_state" value="{{$user_login->state}}" id="billing_state" placeholder=" Provinsi">
                             <span class="text-danger">{{$errors->first('billing_state')}}</span>
                         </div>
                         <div class="form-group">
@@ -39,11 +39,11 @@
                             </select>
                         </div>
                         <div class="form-group {{$errors->has('billing_pincode')?'has-error':''}}">
-                            <input type="text" class="form-control" name="billing_pincode" value="{{$user_login->pincode}}" id="billing_pincode" placeholder=" Billing Pincode">
+                            <input type="text" class="form-control" name="billing_pincode" value="{{$user_login->pincode}}" id="billing_pincode" placeholder=" Kode Pengiriman">
                             <span class="text-danger">{{$errors->first('billing_pincode')}}</span>
                         </div>
                         <div class="form-group {{$errors->has('billing_mobile')?'has-error':''}}">
-                            <input type="text" class="form-control" name="billing_mobile" value="{{$user_login->mobile}}" id="billing_mobile" placeholder="Billing Mobile">
+                            <input type="text" class="form-control" name="billing_mobile" value="{{$user_login->mobile}}" id="billing_mobile" placeholder="Nomor Handphone">
                             <span class="text-danger">{{$errors->first('billing_mobile')}}</span>
                         </div>
 
